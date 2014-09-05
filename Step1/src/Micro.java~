@@ -1,0 +1,19 @@
+import org.antlr.v4.runtime.*;
+
+class Micro {
+
+	public static void main (String[] args) throws Exception {
+
+		ANTLRFileStream file = new ANTLRFileStream(args[0]);
+	
+		Lexer lexer = new MicroLexer(file);
+	
+		Token token;
+		do {
+		    token = lexer.nextToken();
+		    System.out.println("Token Type:" + token.getType());
+		    System.out.println(token.getText());
+		} while (token.getType() != Lexer.EOF);
+	
+	}
+}
