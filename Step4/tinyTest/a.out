@@ -1,0 +1,40 @@
+id a:0/0
+id b:0/0
+id c:0/0
+id d:0/0
+id e:0/0
+id newline:
+
+line:28  move  num:1  reg0
+line:29  move  reg0  id:a
+line:30  move  num:2  reg1
+line:31  move  reg1  id:b
+line:32  sys  id:readi  id:c
+line:33  sys  id:readi  id:d
+line:34  move  id:a  reg2
+line:35  muli  id:c  reg2
+line:36  move  id:b  reg3
+line:37  muli  id:d  reg3
+line:38  move  reg2  reg4
+line:39  addi  reg3  reg4
+line:40  move  reg4  id:e
+line:41  sys  id:writei  id:c
+line:42  sys  id:writes  id:newline
+line:43  sys  id:writei  id:d
+line:44  sys  id:writes  id:newline
+line:45  sys  id:writei  id:e
+line:46  sys  id:writes  id:newline
+line:47  sys  id:halt  
+time:0 line:28  move  num:1  reg0
+FREETIME 0 move (,0)
+Target will be free at cycle 1
+time:1 line:29  move  reg0  id:a
+FREETIME 1 move (1,0)
+Target will be free at cycle 6
+time:2 line:30  move  num:2  reg1
+FREETIME 2 move (,0)
+Target will be free at cycle 3
+time:3 line:31  move  reg1  id:b
+FREETIME 3 move (3,0)
+Target will be free at cycle 8
+time:4 line:32  sys  id:readi  id:c

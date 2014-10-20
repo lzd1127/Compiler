@@ -1,0 +1,561 @@
+id a:0/0
+id b:0/0
+id c:0/0
+id d:0/0
+id x:0/0
+id y:0/0
+id z:0/0
+id t:0/0
+id newline:
+
+line:129  move  num:1  reg0
+line:130  move  reg0  id:a
+line:131  move  num:2  reg1
+line:132  move  reg1  id:b
+line:133  move  num:10  reg2
+line:134  move  reg2  id:c
+line:135  move  num:20  reg3
+line:136  move  reg3  id:d
+line:137  sys  id:writei  id:a
+line:138  sys  id:writes  id:newline
+line:139  sys  id:writei  id:b
+line:140  sys  id:writes  id:newline
+line:141  sys  id:writei  id:c
+line:142  sys  id:writes  id:newline
+line:143  sys  id:writei  id:d
+line:144  sys  id:writes  id:newline
+line:145  move  id:a  reg4
+line:146  addi  id:b  reg4
+line:147  move  reg4  id:a
+line:148  sys  id:writei  id:a
+line:149  sys  id:writes  id:newline
+line:150  move  id:a  reg5
+line:151  muli  id:c  reg5
+line:152  move  reg5  id:b
+line:153  sys  id:writei  id:b
+line:154  sys  id:writes  id:newline
+line:155  move  num:0  reg6
+line:156  move  reg6  reg7
+line:157  subi  id:a  reg7
+line:158  move  reg7  reg8
+line:159  addi  id:b  reg8
+line:160  move  reg8  id:c
+line:161  sys  id:writei  id:c
+line:162  sys  id:writes  id:newline
+line:163  move  num:0  reg9
+line:164  move  reg9  reg10
+line:165  subi  id:d  reg10
+line:166  move  reg10  id:d
+line:167  sys  id:writei  id:d
+line:168  sys  id:writes  id:newline
+line:169  move  id:a  reg11
+line:170  addi  id:b  reg11
+line:171  move  id:d  reg12
+line:172  addi  id:c  reg12
+line:173  move  reg11  reg13
+line:174  muli  reg12  reg13
+line:175  move  id:a  reg14
+line:176  addi  id:b  reg14
+line:177  move  reg14  reg15
+line:178  addi  id:c  reg15
+line:179  move  reg15  reg16
+line:180  addi  id:d  reg16
+line:181  move  reg16  reg17
+line:182  divi  id:a  reg17
+line:183  move  reg13  reg18
+line:184  subi  reg17  reg18
+line:185  move  reg18  id:a
+line:186  sys  id:writei  id:a
+line:187  sys  id:writes  id:newline
+line:188  move  num:10  reg19
+line:189  move  id:a  reg20
+line:190  addi  reg19  reg20
+line:191  move  reg20  id:a
+line:192  sys  id:writei  id:a
+line:193  sys  id:writes  id:newline
+line:194  move  num:10  reg21
+line:195  move  id:b  reg22
+line:196  addi  id:a  reg22
+line:197  move  reg22  reg23
+line:198  addi  reg21  reg23
+line:199  move  reg23  id:b
+line:200  sys  id:writei  id:b
+line:201  sys  id:writes  id:newline
+line:202  move  num:0  reg24
+line:203  move  num:10  reg25
+line:204  move  reg24  reg26
+line:205  subi  reg25  reg26
+line:206  move  reg26  id:c
+line:207  sys  id:writei  id:c
+line:208  sys  id:writes  id:newline
+line:209  move  num:1  reg27
+line:210  move  reg27  id:x
+line:211  move  num:2  reg28
+line:212  move  reg28  id:y
+line:213  move  num:3.14159  reg29
+line:214  move  reg29  id:z
+line:215  sys  id:writer  id:x
+line:216  sys  id:writes  id:newline
+line:217  sys  id:writer  id:z
+line:218  sys  id:writes  id:newline
+line:219  sys  id:writer  id:y
+line:220  sys  id:writes  id:newline
+line:221  move  num:2  reg30
+line:222  move  id:z  reg31
+line:223  divr  reg30  reg31
+line:224  move  reg31  id:x
+line:225  move  id:z  reg32
+line:226  divr  id:y  reg32
+line:227  move  reg32  id:y
+line:228  sys  id:writer  id:x
+line:229  sys  id:writes  id:newline
+line:230  sys  id:writer  id:y
+line:231  sys  id:writes  id:newline
+line:232  move  id:x  reg33
+line:233  addr  id:y  reg33
+line:234  move  reg33  reg34
+line:235  addr  id:z  reg34
+line:236  move  reg34  reg35
+line:237  divr  id:z  reg35
+line:238  move  reg35  id:t
+line:239  sys  id:writer  id:t
+line:240  sys  id:writes  id:newline
+line:241  move  id:t  reg36
+line:242  mulr  id:t  reg36
+line:243  move  reg36  id:t
+line:244  sys  id:writer  id:t
+line:245  sys  id:writes  id:newline
+line:246  move  num:2  reg37
+line:247  move  id:t  reg38
+line:248  divr  reg37  reg38
+line:249  move  num:4  reg39
+line:250  move  id:z  reg40
+line:251  divr  reg39  reg40
+line:252  move  num:5  reg41
+line:253  move  id:z  reg42
+line:254  divr  reg41  reg42
+line:255  move  num:6  reg43
+line:256  move  id:z  reg44
+line:257  divr  reg43  reg44
+line:258  move  num:7  reg45
+line:259  move  id:z  reg46
+line:260  divr  reg45  reg46
+line:261  move  id:t  reg47
+line:262  addr  id:z  reg47
+line:263  move  reg47  reg48
+line:264  addr  id:t  reg48
+line:265  move  reg48  reg49
+line:266  addr  reg38  reg49
+line:267  move  reg49  reg50
+line:268  addr  reg40  reg50
+line:269  move  reg50  reg51
+line:270  addr  reg42  reg51
+line:271  move  reg51  reg52
+line:272  addr  reg44  reg52
+line:273  move  reg52  reg53
+line:274  addr  reg46  reg53
+line:275  move  reg53  id:t
+line:276  sys  id:writer  id:t
+line:277  sys  id:writes  id:newline
+line:278  sys  id:halt  
+time:0 line:129  move  num:1  reg0
+FREETIME 0 move (,0)
+Target will be free at cycle 1
+time:1 line:130  move  reg0  id:a
+FREETIME 1 move (1,0)
+Target will be free at cycle 6
+time:2 line:131  move  num:2  reg1
+FREETIME 2 move (,0)
+Target will be free at cycle 3
+time:3 line:132  move  reg1  id:b
+FREETIME 3 move (3,0)
+Target will be free at cycle 8
+time:4 line:133  move  num:10  reg2
+FREETIME 4 move (,0)
+Target will be free at cycle 5
+time:5 line:134  move  reg2  id:c
+FREETIME 5 move (5,0)
+Target will be free at cycle 10
+time:6 line:135  move  num:20  reg3
+FREETIME 6 move (,0)
+Target will be free at cycle 7
+time:7 line:136  move  reg3  id:d
+FREETIME 7 move (7,0)
+Target will be free at cycle 12
+time:8 line:137  sys  id:writei  id:a
+1time:9 line:138  sys  id:writes  id:newline
+
+time:10 line:139  sys  id:writei  id:b
+2time:11 line:140  sys  id:writes  id:newline
+
+time:12 line:141  sys  id:writei  id:c
+10time:13 line:142  sys  id:writes  id:newline
+
+time:14 line:143  sys  id:writei  id:d
+20time:15 line:144  sys  id:writes  id:newline
+
+time:16 line:145  move  id:a  reg4
+FREETIME 16 move (6,0)
+Target will be free at cycle 21
+time:17 line:146  addi  id:b  reg4
+FREETIME 21 intOp (8,21)
+Target will be free at cycle 27
+time:22 line:147  move  reg4  id:a
+FREETIME 27 move (27,6)
+Target will be free at cycle 32
+time:28 line:148  sys  id:writei  id:a
+3time:29 line:149  sys  id:writes  id:newline
+
+time:30 line:150  move  id:a  reg5
+FREETIME 32 move (32,0)
+Target will be free at cycle 37
+time:33 line:151  muli  id:c  reg5
+FREETIME 37 intOp (10,37)
+Target will be free at cycle 43
+time:38 line:152  move  reg5  id:b
+FREETIME 43 move (43,8)
+Target will be free at cycle 48
+time:44 line:153  sys  id:writei  id:b
+30time:45 line:154  sys  id:writes  id:newline
+
+time:46 line:155  move  num:0  reg6
+FREETIME 46 move (,0)
+Target will be free at cycle 47
+time:47 line:156  move  reg6  reg7
+FREETIME 47 move (47,0)
+Target will be free at cycle 48
+time:48 line:157  subi  id:a  reg7
+FREETIME 48 intOp (32,48)
+Target will be free at cycle 54
+time:49 line:158  move  reg7  reg8
+FREETIME 54 move (54,0)
+Target will be free at cycle 55
+time:55 line:159  addi  id:b  reg8
+FREETIME 55 intOp (48,55)
+Target will be free at cycle 61
+time:56 line:160  move  reg8  id:c
+FREETIME 61 move (61,10)
+Target will be free at cycle 66
+time:62 line:161  sys  id:writei  id:c
+27time:63 line:162  sys  id:writes  id:newline
+
+time:64 line:163  move  num:0  reg9
+FREETIME 64 move (,0)
+Target will be free at cycle 65
+time:65 line:164  move  reg9  reg10
+FREETIME 65 move (65,0)
+Target will be free at cycle 66
+time:66 line:165  subi  id:d  reg10
+FREETIME 66 intOp (12,66)
+Target will be free at cycle 72
+time:67 line:166  move  reg10  id:d
+FREETIME 72 move (72,12)
+Target will be free at cycle 77
+time:73 line:167  sys  id:writei  id:d
+-20time:74 line:168  sys  id:writes  id:newline
+
+time:75 line:169  move  id:a  reg11
+FREETIME 75 move (32,0)
+Target will be free at cycle 80
+time:76 line:170  addi  id:b  reg11
+FREETIME 80 intOp (48,80)
+Target will be free at cycle 86
+time:81 line:171  move  id:d  reg12
+FREETIME 81 move (77,0)
+Target will be free at cycle 86
+time:82 line:172  addi  id:c  reg12
+FREETIME 86 intOp (66,86)
+Target will be free at cycle 92
+time:87 line:173  move  reg11  reg13
+FREETIME 87 move (86,0)
+Target will be free at cycle 88
+time:88 line:174  muli  reg12  reg13
+FREETIME 92 intOp (92,88)
+Target will be free at cycle 93
+time:93 line:175  move  id:a  reg14
+FREETIME 93 move (32,0)
+Target will be free at cycle 98
+time:94 line:176  addi  id:b  reg14
+FREETIME 98 intOp (48,98)
+Target will be free at cycle 104
+time:99 line:177  move  reg14  reg15
+FREETIME 104 move (104,0)
+Target will be free at cycle 105
+time:105 line:178  addi  id:c  reg15
+FREETIME 105 intOp (66,105)
+Target will be free at cycle 111
+time:106 line:179  move  reg15  reg16
+FREETIME 111 move (111,0)
+Target will be free at cycle 112
+time:112 line:180  addi  id:d  reg16
+FREETIME 112 intOp (77,112)
+Target will be free at cycle 118
+time:113 line:181  move  reg16  reg17
+FREETIME 118 move (118,0)
+Target will be free at cycle 119
+time:119 line:182  divi  id:a  reg17
+FREETIME 119 intOp (32,119)
+Target will be free at cycle 125
+time:120 line:183  move  reg13  reg18
+FREETIME 120 move (93,0)
+Target will be free at cycle 121
+time:121 line:184  subi  reg17  reg18
+FREETIME 125 intOp (125,121)
+Target will be free at cycle 126
+time:126 line:185  move  reg18  id:a
+FREETIME 126 move (126,32)
+Target will be free at cycle 131
+time:127 line:186  sys  id:writei  id:a
+218time:128 line:187  sys  id:writes  id:newline
+
+time:129 line:188  move  num:10  reg19
+FREETIME 129 move (,0)
+Target will be free at cycle 130
+time:130 line:189  move  id:a  reg20
+FREETIME 131 move (131,0)
+Target will be free at cycle 136
+time:132 line:190  addi  reg19  reg20
+FREETIME 136 intOp (130,136)
+Target will be free at cycle 137
+time:137 line:191  move  reg20  id:a
+FREETIME 137 move (137,131)
+Target will be free at cycle 142
+time:138 line:192  sys  id:writei  id:a
+228time:139 line:193  sys  id:writes  id:newline
+
+time:140 line:194  move  num:10  reg21
+FREETIME 140 move (,0)
+Target will be free at cycle 141
+time:141 line:195  move  id:b  reg22
+FREETIME 141 move (48,0)
+Target will be free at cycle 146
+time:142 line:196  addi  id:a  reg22
+FREETIME 146 intOp (142,146)
+Target will be free at cycle 152
+time:147 line:197  move  reg22  reg23
+FREETIME 152 move (152,0)
+Target will be free at cycle 153
+time:153 line:198  addi  reg21  reg23
+FREETIME 153 intOp (141,153)
+Target will be free at cycle 154
+time:154 line:199  move  reg23  id:b
+FREETIME 154 move (154,48)
+Target will be free at cycle 159
+time:155 line:200  sys  id:writei  id:b
+268time:156 line:201  sys  id:writes  id:newline
+
+time:157 line:202  move  num:0  reg24
+FREETIME 157 move (,0)
+Target will be free at cycle 158
+time:158 line:203  move  num:10  reg25
+FREETIME 158 move (,0)
+Target will be free at cycle 159
+time:159 line:204  move  reg24  reg26
+FREETIME 159 move (158,0)
+Target will be free at cycle 160
+time:160 line:205  subi  reg25  reg26
+FREETIME 160 intOp (159,160)
+Target will be free at cycle 161
+time:161 line:206  move  reg26  id:c
+FREETIME 161 move (161,66)
+Target will be free at cycle 166
+time:162 line:207  sys  id:writei  id:c
+-10time:163 line:208  sys  id:writes  id:newline
+
+time:164 line:209  move  num:1  reg27
+FREETIME 164 move (,0)
+Target will be free at cycle 165
+time:165 line:210  move  reg27  id:x
+FREETIME 165 move (165,0)
+Target will be free at cycle 170
+time:166 line:211  move  num:2  reg28
+FREETIME 166 move (,0)
+Target will be free at cycle 167
+time:167 line:212  move  reg28  id:y
+FREETIME 167 move (167,0)
+Target will be free at cycle 172
+time:168 line:213  move  num:3.14159  reg29
+FREETIME 168 move (,0)
+Target will be free at cycle 169
+time:169 line:214  move  reg29  id:z
+FREETIME 169 move (169,0)
+Target will be free at cycle 174
+time:170 line:215  sys  id:writer  id:x
+1time:171 line:216  sys  id:writes  id:newline
+
+time:172 line:217  sys  id:writer  id:z
+3.14159time:173 line:218  sys  id:writes  id:newline
+
+time:174 line:219  sys  id:writer  id:y
+2time:175 line:220  sys  id:writes  id:newline
+
+time:176 line:221  move  num:2  reg30
+FREETIME 176 move (,0)
+Target will be free at cycle 177
+time:177 line:222  move  id:z  reg31
+FREETIME 177 move (174,0)
+Target will be free at cycle 182
+time:178 line:223  divr  reg30  reg31
+FREETIME 182 fpOp (177,182)
+Target will be free at cycle 185
+time:183 line:224  move  reg31  id:x
+FREETIME 185 move (185,170)
+Target will be free at cycle 190
+time:186 line:225  move  id:z  reg32
+FREETIME 186 move (174,0)
+Target will be free at cycle 191
+time:187 line:226  divr  id:y  reg32
+FREETIME 191 fpOp (172,191)
+Target will be free at cycle 199
+time:192 line:227  move  reg32  id:y
+FREETIME 199 move (199,172)
+Target will be free at cycle 204
+time:200 line:228  sys  id:writer  id:x
+1.5708time:201 line:229  sys  id:writes  id:newline
+
+time:202 line:230  sys  id:writer  id:y
+1.5708time:203 line:231  sys  id:writes  id:newline
+
+time:204 line:232  move  id:x  reg33
+FREETIME 204 move (190,0)
+Target will be free at cycle 209
+time:205 line:233  addr  id:y  reg33
+FREETIME 209 fpOp (204,209)
+Target will be free at cycle 217
+time:210 line:234  move  reg33  reg34
+FREETIME 217 move (217,0)
+Target will be free at cycle 218
+time:218 line:235  addr  id:z  reg34
+FREETIME 218 fpOp (174,218)
+Target will be free at cycle 226
+time:219 line:236  move  reg34  reg35
+FREETIME 226 move (226,0)
+Target will be free at cycle 227
+time:227 line:237  divr  id:z  reg35
+FREETIME 227 fpOp (174,227)
+Target will be free at cycle 235
+time:228 line:238  move  reg35  id:t
+FREETIME 235 move (235,0)
+Target will be free at cycle 240
+time:236 line:239  sys  id:writer  id:t
+2time:237 line:240  sys  id:writes  id:newline
+
+time:238 line:241  move  id:t  reg36
+FREETIME 240 move (240,0)
+Target will be free at cycle 245
+time:241 line:242  mulr  id:t  reg36
+FREETIME 245 fpOp (240,245)
+Target will be free at cycle 253
+time:246 line:243  move  reg36  id:t
+FREETIME 253 move (253,240)
+Target will be free at cycle 258
+time:254 line:244  sys  id:writer  id:t
+4time:255 line:245  sys  id:writes  id:newline
+
+time:256 line:246  move  num:2  reg37
+FREETIME 256 move (,0)
+Target will be free at cycle 257
+time:257 line:247  move  id:t  reg38
+FREETIME 258 move (258,0)
+Target will be free at cycle 263
+time:259 line:248  divr  reg37  reg38
+FREETIME 263 fpOp (257,263)
+Target will be free at cycle 266
+time:264 line:249  move  num:4  reg39
+FREETIME 264 move (,0)
+Target will be free at cycle 265
+time:265 line:250  move  id:z  reg40
+FREETIME 265 move (174,0)
+Target will be free at cycle 270
+time:266 line:251  divr  reg39  reg40
+FREETIME 270 fpOp (265,270)
+Target will be free at cycle 273
+time:271 line:252  move  num:5  reg41
+FREETIME 271 move (,0)
+Target will be free at cycle 272
+time:272 line:253  move  id:z  reg42
+FREETIME 272 move (174,0)
+Target will be free at cycle 277
+time:273 line:254  divr  reg41  reg42
+FREETIME 277 fpOp (272,277)
+Target will be free at cycle 280
+time:278 line:255  move  num:6  reg43
+FREETIME 278 move (,0)
+Target will be free at cycle 279
+time:279 line:256  move  id:z  reg44
+FREETIME 279 move (174,0)
+Target will be free at cycle 284
+time:280 line:257  divr  reg43  reg44
+FREETIME 284 fpOp (279,284)
+Target will be free at cycle 287
+time:285 line:258  move  num:7  reg45
+FREETIME 285 move (,0)
+Target will be free at cycle 286
+time:286 line:259  move  id:z  reg46
+FREETIME 286 move (174,0)
+Target will be free at cycle 291
+time:287 line:260  divr  reg45  reg46
+FREETIME 291 fpOp (286,291)
+Target will be free at cycle 294
+time:292 line:261  move  id:t  reg47
+FREETIME 292 move (258,0)
+Target will be free at cycle 297
+time:293 line:262  addr  id:z  reg47
+FREETIME 297 fpOp (174,297)
+Target will be free at cycle 305
+time:298 line:263  move  reg47  reg48
+FREETIME 305 move (305,0)
+Target will be free at cycle 306
+time:306 line:264  addr  id:t  reg48
+FREETIME 306 fpOp (258,306)
+Target will be free at cycle 314
+time:307 line:265  move  reg48  reg49
+FREETIME 314 move (314,0)
+Target will be free at cycle 315
+time:315 line:266  addr  reg38  reg49
+FREETIME 315 fpOp (266,315)
+Target will be free at cycle 318
+time:316 line:267  move  reg49  reg50
+FREETIME 318 move (318,0)
+Target will be free at cycle 319
+time:319 line:268  addr  reg40  reg50
+FREETIME 319 fpOp (273,319)
+Target will be free at cycle 322
+time:320 line:269  move  reg50  reg51
+FREETIME 322 move (322,0)
+Target will be free at cycle 323
+time:323 line:270  addr  reg42  reg51
+FREETIME 323 fpOp (280,323)
+Target will be free at cycle 326
+time:324 line:271  move  reg51  reg52
+FREETIME 326 move (326,0)
+Target will be free at cycle 327
+time:327 line:272  addr  reg44  reg52
+FREETIME 327 fpOp (287,327)
+Target will be free at cycle 330
+time:328 line:273  move  reg52  reg53
+FREETIME 330 move (330,0)
+Target will be free at cycle 331
+time:331 line:274  addr  reg46  reg53
+FREETIME 331 fpOp (294,331)
+Target will be free at cycle 334
+time:332 line:275  move  reg53  id:t
+FREETIME 334 move (334,258)
+Target will be free at cycle 339
+time:335 line:276  sys  id:writer  id:t
+15.5277time:336 line:277  sys  id:writes  id:newline
+
+time:337 line:278  sys  id:halt  
+
+STATISTICS _____________________________
+   #Instructions:150
+    (move-ops mem:37, reglit:37)
+    ( int-ops mem:44, reglit:6)
+    (  fp-ops mem:15, reglit:11)
+   Memory Usage (mem:96,reg:143)
+      register-use[2,2,2,2,3,3,2,3,3,2,3,3,3,3,3,3,3,3,3,2,3,2,3,3,2,2,3,2,2,2,2,3,3,3,3,3,3,2,3,2,3,2,3,2,3,2,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+   Total Cycles = 340
+OTHER STATSvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+    (int-ops:37, fp-ops:26)
+    (branches:0)
+      peephole-ops:0
