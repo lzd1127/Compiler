@@ -1,0 +1,43 @@
+import org.antlr.v4.runtime.misc.NotNull;
+
+public class myListener extends MicroBaseListener {
+
+
+	public static LinkedList<ListNode> IRList = new LinkedList<ListNode>();
+	private static int regCount = 0;	
+
+	@Override public void enterProgram(@NotNull MicroParser.ProgramContext ctx) { 
+		System.out.println("IRcode");	
+	}
+	@Override public void exitProgram(@NotNull MicroParser.ProgramContext ctx) {
+		System.out.println(";RET);	
+	}
+	
+	@Override public void enterCond(@NotNull MicroParser.CondContext ctx) { }
+
+	@Override public void exitCond(@NotNull MicroParser.CondContext ctx) { }
+
+	@Override public void enterAssign_expr(@NotNull MicroParser.Assign_exprContext ctx) { }
+
+	@Override public void exitAssign_expr(@NotNull MicroParser.Assign_exprContext ctx) { }
+	@Override public void enterRead_stmt(@NotNull MicroParser.Read_stmtContext ctx) { }
+
+	@Override public void exitRead_stmt(@NotNull MicroParser.Read_stmtContext ctx) { }
+
+	@Override public void enterAddop(@NotNull MicroParser.AddopContext ctx) { }
+	@Override public void exitAddop(@NotNull MicroParser.AddopContext ctx) { }
+
+	@Override public void enterPrimary(@NotNull MicroParser.PrimaryContext ctx) { }
+
+	@Override public void exitPrimary(@NotNull MicroParser.PrimaryContext ctx) { }
+
+	@Override public void enterFactor_prefix(@NotNull MicroParser.Factor_prefixContext ctx) { }
+
+	@Override public void exitFactor_prefix(@NotNull MicroParser.Factor_prefixContext ctx) { }
+
+	@Override public void enterExpr_prefix(@NotNull MicroParser.Expr_prefixContext ctx) { }
+
+	@Override public void exitExpr_prefix(@NotNull MicroParser.Expr_prefixContext ctx) { }
+
+
+}
