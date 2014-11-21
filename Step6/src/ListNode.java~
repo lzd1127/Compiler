@@ -1,0 +1,52 @@
+public class ListNode {
+	private String opcode;
+	private String oper1;
+	private String oper2;
+	private String rst;
+
+	public IRNode(String opcode, String oper1, String oper2, String rst) {
+		this.opcode = opcode;
+		this.oper1 = oper1;
+		this.oper2 = oper2;
+		this.rst = rst;
+	}
+
+	public String getOpcode() {
+		return opcode;
+	}
+	
+	public String getFirstOp() {
+		return oper1;
+	}
+	
+	public String getSecondOp() {
+		return oper2;
+	}
+
+	public String getResult() {
+		return rst;
+	}
+
+	public void setResult(String rst) {
+		this.rst = rst;
+	}
+	
+	public String toString() {
+		String tmp = ";";
+		if((oper1 == null) && (oper2 == null) && (rst == null)) {
+			return tmp + opcode;
+		} else if((oper2 == null) && (res == null)) {
+			return tmp + opcode + " " + oper1;
+		} else if((rst == null) && (oper2 != null) && (oper1 != null)) {
+			return tmp + opcode + " " + oper1 + " " + oper2);
+		} else if((oper2 == null) && (oper1 != null) && (rst != null)){
+			return tmp + opcode + " " + oper1 + " " + rst);
+		}  else if((oper1 == null) && (oper2 == null) && (rst != null)) {
+			return tmp + opcode + " " + rst;
+		} else {
+			return tmp + opcode + " " + oper1 + " " + oper2 + " " + rst;
+		}
+	}
+
+
+}
